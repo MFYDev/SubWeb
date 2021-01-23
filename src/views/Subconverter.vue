@@ -294,17 +294,22 @@ export default {
                 value:
                   "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini"
               },
-              {
+        {
                 label: "ACL4SSR全分组 无自动测速",
                 value:
                   "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
               },
-              {
+        {
+                label: "ACL4SSR全分组 Google配置无测速",
+                value:
+                  "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_Google.ini"
+              },
+        {
                 label: "ACL4SSR全分组 更多去广告",
                 value:
                   "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
               },
-              {
+        {
                 label: "ACL4SSR全分组 奈飞全量",
                 value:
                   "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini"
@@ -404,7 +409,7 @@ export default {
   mounted() {
     this.form.clientType = "clash";
     this.form.customBackend = "https://vpn.mfy.world/sub?";
-    this.form.remoteConfig = "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini";
+    this.form.remoteConfig = "https://raw.githubusercontent.com/MFYDev/MFYRuleSet/master/Clash/config/ACL4SSR_Online_Full_Google.ini";
     this.notify();
     this.getBackendVersion();
   },
